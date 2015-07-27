@@ -1,0 +1,5 @@
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Domain\bin\Debug\AnswerSpaTest.Domain.dll
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Domain\bin\Debug\AnswerSpaTest.Domain.pdb
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Domain\obj\Debug\AnswerSpaTest.Domain.dll
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Domain\obj\Debug\AnswerSpaTest.Domain.pdb
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Domain\obj\Debug\AnswerSpaTest.Domain.csprojResolveAssemblyReference.cache

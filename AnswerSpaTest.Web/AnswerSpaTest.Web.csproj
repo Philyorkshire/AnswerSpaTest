@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CCE4A80-3A06-47BD-B7FB-5C5AB768F227}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnswerSpaTest.Web</RootNamespace>
+    <AssemblyName>AnswerSpaTest.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.ContextPreservation">
+      <HintPath>..\packages\Ninject.Extensions.ContextPreservation.3.2.0.0\lib\net45-full\Ninject.Extensions.ContextPreservation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Extensions.NamedScope, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.Extensions.NamedScope.3.2.0.0\lib\net45-full\Ninject.Extensions.NamedScope.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.Web.Common.3.2.3.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common.OwinHost, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.Web.Common.OwinHost.3.2.3.0\lib\net45-full\Ninject.Web.Common.OwinHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.WebApi, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.Web.WebApi.3.2.4.0\lib\net45-full\Ninject.Web.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.WebApi.OwinHost, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.Web.WebApi.OwinHost.3.2.4.0\lib\net45-full\Ninject.Web.WebApi.OwinHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App\apps\people\edit\model.js" />
+    <Content Include="App\apps\people\edit\templates\edit.html" />
+    <Content Include="App\apps\people\edit\view.js" />
+    <Content Include="App\apps\people\list\model.js" />
+    <Content Include="App\apps\people\model.js" />
+    <Content Include="App\lib\reqres.js" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="App\lib\require-handlebars-plugin\.gitignore" />
+    <Content Include="App\lib\require-handlebars-plugin\demo-build.html" />
+    <Content Include="App\lib\require-handlebars-plugin\demo.html" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\app.build.js" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\main.js" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\require.js" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\styles\one.css" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\styles\two.css" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\template\helpers\myhelper.js" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\template\helpers\yeller.js" />
+    <Content Include="App\lib\require-handlebars-plugin\hbs.js" />
+    <Content Include="App\lib\require-handlebars-plugin\hbs\handlebars.js" />
+    <Content Include="App\lib\require-handlebars-plugin\hbs\handlebars.runtime.js" />
+    <Content Include="App\lib\require-handlebars-plugin\hbs\i18nprecompile.js" />
+    <Content Include="App\lib\require-handlebars-plugin\hbs\json2.js" />
+    <Content Include="App\lib\require-handlebars-plugin\hbs\underscore.js" />
+    <Content Include="App\lib\require-handlebars-plugin\karma.conf.js" />
+    <Content Include="App\lib\require-handlebars-plugin\r.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\spec\helpers.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\spec\main.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\spec\multiline.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\spec\partial.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\spec\partial_loaded.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\spec\partial_subdir.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\spec\sexpr_hash.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\spec\sexpr_param.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\spec\simple.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\helpers\inner-helper.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\helpers\outer-helper.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\helpers\var-sub.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\test-main.js" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\test.html" />
+    <Content Include="App\main.js" />
+    <Content Include="App\apps\people\controller.js" />
+    <Content Include="App\apps\people\list\templates\people.html" />
+    <Content Include="App\apps\people\list\templates\personRow.html" />
+    <Content Include="App\apps\people\list\view.js" />
+    <Content Include="App\master\Application.js" />
+    <Content Include="App\master\Router.js" />
+    <Content Include="App\master\templates\layout.html" />
+    <Content Include="Scripts\backbone.marionette.min.js" />
+    <Content Include="Scripts\backbone.min.js" />
+    <Content Include="Scripts\backbone.wreqr.min.js" />
+    <Content Include="Scripts\handlebars.min.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\mustache.min.js" />
+    <Content Include="Scripts\require.min.js" />
+    <Content Include="Scripts\underscore-min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ColourController.cs" />
+    <Compile Include="Controllers\PeopleController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="App\lib\require-handlebars-plugin\build.sh" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\template\coolPartial.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\template\i18n\en_ca.json" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\template\i18n\en_us.json" />
+    <Content Include="App\lib\require-handlebars-plugin\demo\template\one.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\package.json" />
+    <Content Include="App\lib\require-handlebars-plugin\README.md" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\helpers.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\multiline.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\partial.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\partials\_simple.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\partial_fullpath.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\partial_loaded.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\partial_subdir.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\sexpr_hash.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\sexpr_params.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\simple.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\subdir\parent.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\_partial.hbs" />
+    <Content Include="App\lib\require-handlebars-plugin\tests\templates\_partial_loaded.hbs" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AnswerSpaTest.Data\AnswerSpaTest.Data.csproj">
+      <Project>{F8CEBD32-CD2C-43FA-98F0-218B91E111B2}</Project>
+      <Name>AnswerSpaTest.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AnswerSpaTest.Domain\AnswerSpaTest.Domain.csproj">
+      <Project>{C94E1949-3A3B-46E9-BE8C-44B37854A6D6}</Project>
+      <Name>AnswerSpaTest.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AnswerSpaTest.Service\AnswerSpaTest.Service.csproj">
+      <Project>{7D22C336-3E0A-4D44-BA25-51D5787EA446}</Project>
+      <Name>AnswerSpaTest.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49340</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49340/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

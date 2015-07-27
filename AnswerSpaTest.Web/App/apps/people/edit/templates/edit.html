@@ -1,0 +1,41 @@
+﻿<a href="" data-backbone="" id="back">back to list</a>
+
+<h2>Update {{fullName}}</h2>
+
+<form role="form">
+  <h4><strong>User Details</strong></h4><hr/>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" {{#if isAuthorised}} checked {{/if}} name="authorised" />Authorised
+    </label>
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" {{#if isEnabled}} checked {{/if}} name="enabled" />Enabled
+    </label>
+  </div>
+
+  <h4><strong>Favourite Colours</strong></h4><hr/>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" class="colour-item" data-id="3" />Blue
+    </label>
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" class="colour-item" data-id="2" />Green
+    </label>
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" class="colour-item" data-id="1" />Red
+    </label>
+  </div>
+
+  <button id="reset" data-backbone="" class="btn btn-danger">Reset</button>
+  <button id="save" data-backbone="" class="btn btn-default">Save Changes</button>
+</form>
+

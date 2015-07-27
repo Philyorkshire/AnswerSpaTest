@@ -1,0 +1,25 @@
+﻿<td><a href="" data-id="{{id}}">{{fullName}}</a></td>
+
+{{#if isPalindrome}}
+<td class="bool-yes">Yes</td>
+{{else}}
+<td class="bool-no">No</td>
+{{/if}}
+
+{{#if isAuthorised}}
+<td class="bool-yes">Yes</td>
+{{else}}
+<td class="bool-no">No</td>
+{{/if}}
+
+{{#if isEnabled}}
+<td class="bool-yes">Yes</td>
+{{else}}
+<td class="bool-no">No</td>
+{{/if}}
+
+<td>
+  {{#each favouriteColours}}
+  <span>{{name}}</span>
+  {{/each}}
+</td>

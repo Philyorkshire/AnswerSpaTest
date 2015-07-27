@@ -1,0 +1,15 @@
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\AnswerSpaTest.Service.dll
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\AnswerSpaTest.Service.pdb
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\AnswerSpaTest.Data.dll
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\AnswerSpaTest.Domain.dll
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\Ninject.dll
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\EntityFramework.dll
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\AnswerSpaTest.Data.pdb
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\AnswerSpaTest.Domain.pdb
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\Ninject.xml
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\bin\Debug\EntityFramework.xml
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\obj\Debug\AnswerSpaTest.Service.csprojResolveAssemblyReference.cache
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\obj\Debug\AnswerSpaTest.Service.dll
+C:\Users\Phillip\Documents\GitHub\AnswerSpaTest\AnswerSpaTest.Service\obj\Debug\AnswerSpaTest.Service.pdb

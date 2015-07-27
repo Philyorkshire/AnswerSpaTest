@@ -1,0 +1,16 @@
+﻿.bool-yes {
+    color: green;
+}
+
+.bool-no {
+    color: red;
+}
+
+
+.table span:after {
+  content: ",";
+}
+
+.table span:last-child:after {
+  content: " ";
+}
